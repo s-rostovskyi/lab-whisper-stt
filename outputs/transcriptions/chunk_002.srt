@@ -26,42 +26,42 @@ Yes.
 00:00:17,960 --> 00:00:23,880
 I wrote a new migration that recreates the index concurrently, so it will not lock the
 
-9
+8
 00:00:24,440 --> 00:00:24,560
 SQL.
 
-10
+9
 00:00:24,880 --> 00:00:32,440
 I also added a check in our CI pipeline, using pgstat statements, so we get an alert in Datadog
 
-11
+10
 00:00:32,440 --> 00:00:35,620
 if any query goes above 200 milliseconds.
 
-12
+11
 00:00:36,920 --> 00:00:38,240
 That's really helpful.
 
-13
+12
 00:00:38,800 --> 00:00:42,540
 From the product side, customers definitely noticed.
 
-14
+13
 00:00:43,020 --> 00:00:49,260
 We had 11 support tickets about slow checkout in the last week, and our NPS score dropped
 
-15
+14
 00:00:49,260 --> 00:00:50,660
 by 3 points.
 
-16
+15
 00:00:51,960 --> 00:00:53,540
 Thanks, Aisha.
 
-17
+16
 00:00:53,540 --> 00:00:57,260
 Okay, item 3, the Q3OKRs.
 
-18
+17
 00:00:57,780 --> 00:00:59,540
 Aisha, can you give us the summary?
